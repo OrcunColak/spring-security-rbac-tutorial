@@ -16,6 +16,12 @@ import static org.springframework.boot.autoconfigure.security.servlet.PathReques
 
 @Configuration
 @EnableWebSecurity
+// Method-Level Security Annotations
+// This enables @PreAuthorize because prePostEnabled= true by default
+// @Secured because securedEnabled = true
+// @RolesAllowed because jsr250Enabled = true
+
+// @PreAuthorize allows hasRole
 @EnableMethodSecurity(securedEnabled = true, jsr250Enabled = true)
 public class WebSecurityConfiguration {
 
