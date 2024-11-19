@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/admin/")
 public class AdminController {
 
+    // This URL can only be accessed by ADMIN role
     // http://localhost:8080/admin/dashboard
     @GetMapping("/dashboard")
     public String adminDashboard() {

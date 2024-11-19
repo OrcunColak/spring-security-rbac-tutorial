@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 public class UserController {
 
+    // This URL can only be accessed by USER role
     // http://localhost:8080/user/dashboard
     @GetMapping("/dashboard")
     public String userDashboard() {

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/public")
 public class PublicController {
 
+    // This URL can be accessed by everybody
     // http://localhost:8080/public/greetPublic
     @GetMapping("/greetPublic")
     public String greetPublic() {
